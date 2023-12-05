@@ -29,14 +29,14 @@ public class Comparadores {
            System.out.println(p);
        }
 
-        System.out.println("Sorted by last name");
+        System.out.println("Sorted by name");
         Collections.sort(l);
        for (Person p: l){
            System.out.println(p);
        }
 
-        System.out.println("Sorted by name");
-        NameComparator c = new NameComparator();
+        System.out.println("Sorted by last name");
+        LastNameComparator c = new LastNameComparator();
        Collections.sort(l, c);
        for (Person p: l){
            System.out.println(p);
